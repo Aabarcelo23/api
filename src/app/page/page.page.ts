@@ -71,7 +71,7 @@ export class PagePage implements OnInit{
    ngOnInit(): void {
      this.showe().then(x =>{
       if (x){
-        this.router.navigateByUrl("/page")//modifique aqui para que no se redirigiera enseguida al home
+        this.router.navigateByUrl("/page")//modifique aqui para que no se redirigiera enseguida al homee
       }
      })
    }

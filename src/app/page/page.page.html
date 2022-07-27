@@ -1,0 +1,25 @@
+
+<ion-content>
+  <ion-slides pager="true" [options]="slideOpt"> 
+    
+    
+    
+    <ion-slide *ngFor="let slide of slides">
+      <ion-icon name="close" (click)="finish()"></ion-icon>
+      <h1>{{slide.tittle}}</h1> 
+      <h2>{{slide.subtittle}}</h2>
+      <img src={{slide.img}}>
+      <p>{{slide.description2}} </p>
+      <div>{{slide.description}} <ion-icon name={{slide.icon}}></ion-icon> </div>
+      <div>{{slide.genero}} <ion-icon name={{slide.icon2}}></ion-icon></div>
+      <ion-button>Next</ion-button>
+    </ion-slide>
+
+    <!--<ion-slide *ngFor="let slides">
+      <ion-icon name="close"></ion-icon>
+      <h1>{{slide.tittle}}</h1> 
+      <h2>{{slide.subtittle}}</h2>
+      <img src={{slide.img}}/>
+      <div>{{slide.description}}</div>
+      <div>{{slide.genero}}<ion-icon name={{slide.icon}}></ion-icon></div>
+    </ion-slide> -->

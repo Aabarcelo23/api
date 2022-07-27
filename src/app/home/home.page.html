@@ -1,27 +1,53 @@
+<ion-content>
+  <h1>Hola soy el home</h1>
+</ion-content>
+
+
+
+<!---
 
 <ion-content>
-  <ion-slides pager="true" [options]="slideOpt">    
+  <ion-slides pager="true" [options]="slideOpt"> 
     
+    
+    
+    <ion-slide *ngFor="let slide of slides">
+      <ion-icon name="close"></ion-icon>
+      <h1>{{slide.tittle}}</h1> 
+      <h2>{{slide.subtittle}}</h2>
+      <img src={{slide.img}}>
+      <p>{{slide.description}} <ion-icon name={{slide.icon}}></ion-icon> </p>
+      <ion-button>primary</ion-button>
+    </ion-slide>
+
+    <ion-slide *ngFor="let slides">
+      <ion-icon name="close"></ion-icon>
+      <h1>{{slide.tittle}}</h1> 
+      <h2>{{slide.subtittle}}</h2>
+      <img src={{slide.img}}/>
+      <div>{{slide.description}}</div>
+      <p>{{slide.genero}}<ion-icon name={{slide.icon}}></ion-icon></p>
+    </ion-slide>
+
+  
     <ion-slide>
       <ion-icon name="close"></ion-icon>
       <h1>BIENVENIDO A AppI</h1> 
       <h2>Despierta tus sentidos!</h2>
-      <img src="assets/image/appi2.JPG"/>
-      <p>Disfruta de la buena musica <ion-icon name="musical-notes-outline"></ion-icon> </p>
+      <img src="assets/image/appi2.JPG">
+      <p>Disfruta de la buena musica <ion-icon name=musical-notes-outline></ion-icon> </p>
+      <ion-button>primary</ion-button>
     </ion-slide>
-
     <ion-slide>
       <ion-icon name="close"></ion-icon>
       <h1>INICIO</h1> 
-      <h2>Lo mejor del dia! </h2>
+      <h2>Lo mejor del dia!</h2>
       <img src="assets/image/idilio.jpg"/>
-      <div>Solo me alienta el deseo divino de hacerte mía
-        Mas me destruye la incertidumbre que estoy pasando
-        Es que la nieve cruel de los años mi cuerpo enfría
-        Y se me agota ya la paciencia por ti esperando…</div>
-      <p>Romance<ion-icon name="musical-notes-outline"></ion-icon></p>
+      <div>Solo me alienta el deseo divino de hacerte mía Mas me destruye la incertidumbre que estoy pasando Es que la nieve cruel de los años mi cuerpo enfría Y se me agota ya la paciencia por ti esperando…</div>
+      <p>Romance<ion-icon name=musical-notes-outline></ion-icon></p>
     </ion-slide>
-
+  
+  
     <ion-slide>
       <ion-icon name="close"></ion-icon>  
       <h1>MUSICA NUEVA!</h1> 
@@ -44,5 +70,7 @@
       </div>
       <p>Exitos del 2022!<ion-icon name="musical-notes-outline"></ion-icon></p>
     </ion-slide>
+  
   </ion-slides>
 </ion-content>
+-->

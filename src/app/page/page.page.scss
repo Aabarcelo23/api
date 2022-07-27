@@ -1,0 +1,85 @@
+
+
+ion-slides{
+    height:100%;
+    background-color: var(--ion-color-warning-contrast);// variable creada de css
+    max-width: 800px;
+  }
+  
+  .swiper-slide{
+    display:block;
+    margin-bottom:60px;
+    background-color: var(--ion-color-secondary);// variable creada de css
+    border-radius: var(--slide-img-border-radius); //variable creada por mi
+  }
+  
+  ion-slide >h1{
+    margin:40px;
+    color:purple;
+    font-family: bold;
+   
+  }
+  
+  
+  ion-slide >h2{
+    margin:30px;
+    color:#D610B5;
+    font-style: italic;
+  }
+  
+  ion-slide > img{
+    height: var(--slide-height); //variable creada por mi
+    width: var(--slide-width);   //variable creada por mi
+    border-radius: 20px ;
+    border-style: black 3px;
+    background-color: black;
+    padding: 15px;
+    margin:6px;
+  }
+  
+  
+  ion-slide > p{
+    font-style: italic;
+    font-size:17px;
+    padding: 5px;
+    color:black;
+    border-style: #D610B5;
+    margin:0px;
+  }
+  
+  ion-slide > p> ion-icon{
+    color:#D610B5;
+    font-size: 20px;
+  } 
+
+ 
+  ion-slide > div{
+    font-style: italic;
+    font-size:22px;
+    padding: 2px;
+    margin:8px;
+    color: white;
+   
+
+  }
+
+  ion-slide > div> ion-icon{
+    color:#D610B5;
+    font-size: 20px;
+  }
+  
+  
+  ion-slide > ion-icon[name="close"]{
+    float: right;
+    color:purple;
+    font-size: 30px;
+    padding:7px;
+  }
+  
+  ion-button{
+    --background:red;
+    font-size:15px;
+    --color:black;
+  }
+  
+ 

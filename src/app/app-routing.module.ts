@@ -1,15 +1,24 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import {PageGuard} from './guards/page.guard';
 
 const routes: Routes = [
   {
     path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule),canActivate:[PageGuard]
   },
   {
-    path: '',
+    path: ' ',
     redirectTo: 'home',
     pathMatch: 'full'
+  },
+  {
+    path: 'page',
+    loadChildren: () => import('./page/page.module').then( m => m.PagePageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
 ];
 

@@ -1,0 +1,48 @@
+
+//ESTILOS DE LA PAGINA
+ion-title{
+    background-color:#515655;
+    color:#49F7E2;
+    padding:22px;
+    border-style: solid;
+    border-color:black;
+
+}
+
+ion-item{
+    color:purple;
+    border-style:solid;
+    border-color:black;
+    border-width: 1px;
+}
+
+ion-button{
+    background-color:purple;
+    border-style:solid;
+    border-color:black;
+    border-width: 1px;
+
+}
+
+ion-icon{
+    border-style:solid;
+    border-color:black;
+
+}
+form {
+    background-color:#B049D9;
+    padding:22px;
+    border-style: solid;
+    border-color: black;
+    height: 90%;
+  }
+
+
+
+.message{       //utilidades del css
+    background-color:red;
+    color: white;
+    text-transform: uppercase; 
+    font-size: 11px; 
+    text-align: center;
+}

@@ -58,10 +58,11 @@ export class LoginPage implements OnInit {
   }
 
   loginUser(credentials){
+    console.log(credentials);
     this.authService.loginUser(credentials).then( res =>{
       this.errorMessage = "";
       this.storage.set("isUserLoggedIn",true)
-      this.navCtrl.navigateForward("/home"); // aqui redireccionas el login
+      this.navCtrl.navigateForward("/menu"); // aqui redireccionas el menu
     }).catch( err =>{
       this.errorMessage = err;
     })

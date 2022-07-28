@@ -1,16 +1,13 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
-import {PageGuard} from './guards/page.guard';
+import { PageGuard } from './guards/page.guard';
 import { LoginGuard } from './guards/login.guard';
 
 const routes: Routes = [
+
   {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule),canActivate:[LoginGuard, PageGuard]
-  },
-  {
-    path: ' ',
-    redirectTo: 'home',
+    path: '',
+    redirectTo: 'menu',
     pathMatch: 'full'
   },
   {
@@ -19,12 +16,24 @@ const routes: Routes = [
   },
   {
     path: 'login',
-    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule), canActivate: [PageGuard]
   },
   {
     path: 'register',
     loadChildren: () => import('./register/register.module').then( m => m.RegisterPageModule)
   },
+  {
+    path: 'menu',
+    loadChildren: () => import('./menu/menu.module').then( m => m.MenuPageModule), canActivate: [LoginGuard]
+  },
+  {
+    path: 'songs-modal',
+    loadChildren: () => import('./songs-modal/songs-modal.module').then( m => m.SongsModalPageModule)
+  },
+  
+
+
 ];
 
 @NgModule({
@@ -33,4 +42,5 @@ const routes: Routes = [
   ],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+
+export class AppRoutingModule { } 

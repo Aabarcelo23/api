@@ -34,4 +34,10 @@ export class MusicService {
       (albums) => albums.json()
     );
   }
+  getAlbumsTracks(album_id) {
+    return fetch(`${this.url_server}tracks/album/${album_id}`, { mode: 'cors' , headers: this.header} ).then(
+      (albums) => albums.json()
+    );
+  }
+
 }

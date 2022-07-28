@@ -1,5 +1,6 @@
 <ion-header>
   <ion-toolbar>
+    <ion-title>-AppI-</ion-title>
     <ion-buttons slot="end">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
@@ -18,7 +19,7 @@
   <h1>Albums</h1>
   <ion-slides [options]="slideOps">
     <ion-slide *ngFor="let album of albums">
-      <ion-avatar class="square-avatar">
+      <ion-avatar (click)="showSongsAlbum(album)" class="square-avatar">
         <img src={{album.image}} />
         <span>{{album.name}}</span>
       </ion-avatar>
@@ -51,73 +52,3 @@
     </ion-row>
   </ion-grid>
 </ion-footer>
-<!---
-
-<ion-content>
-  <ion-slides pager="true" [options]="slideOpt"> 
-    
-    
-    
-    <ion-slide *ngFor="let slide of slides">
-      <ion-icon name="close"></ion-icon>
-      <h1>{{slide.tittle}}</h1> 
-      <h2>{{slide.subtittle}}</h2>
-      <img src={{slide.img}}>
-      <p>{{slide.description}} <ion-icon name={{slide.icon}}></ion-icon> </p>
-      <ion-button>primary</ion-button>
-    </ion-slide>
-
-    <ion-slide *ngFor="let slides">
-      <ion-icon name="close"></ion-icon>
-      <h1>{{slide.tittle}}</h1> 
-      <h2>{{slide.subtittle}}</h2>
-      <img src={{slide.img}}/>
-      <div>{{slide.description}}</div>
-      <p>{{slide.genero}}<ion-icon name={{slide.icon}}></ion-icon></p>
-    </ion-slide>
-
-  
-    <ion-slide>
-      <ion-icon name="close"></ion-icon>
-      <h1>BIENVENIDO A AppI</h1> 
-      <h2>Despierta tus sentidos!</h2>
-      <img src="assets/image/appi2.JPG">
-      <p>Disfruta de la buena musica <ion-icon name=musical-notes-outline></ion-icon> </p>
-      <ion-button>primary</ion-button>
-    </ion-slide>
-    <ion-slide>
-      <ion-icon name="close"></ion-icon>
-      <h1>INICIO</h1> 
-      <h2>Lo mejor del dia!</h2>
-      <img src="assets/image/idilio.jpg"/>
-      <div>Solo me alienta el deseo divino de hacerte mía Mas me destruye la incertidumbre que estoy pasando Es que la nieve cruel de los años mi cuerpo enfría Y se me agota ya la paciencia por ti esperando…</div>
-      <p>Romance<ion-icon name=musical-notes-outline></ion-icon></p>
-    </ion-slide>
-  
-  
-    <ion-slide>
-      <ion-icon name="close"></ion-icon>  
-      <h1>MUSICA NUEVA!</h1> 
-      <h2>-Album destacado- </h2>
-      <img src="assets/image/devuel.jpg"/>
-      <div>De vuelta pa' la vuelta
-        Voy a amarrar a to'a la' que anden suelta' (eh)
-        De vuelta pa' la vuelta (wuh)
-        </div>
-      <p>Salsa-Reggaeton<ion-icon name="musical-notes-outline"></ion-icon></p>
-    </ion-slide>
-
-    <ion-slide> 
-      <ion-icon name="close"></ion-icon>
-      <h1>ENCUENTRA TU ESTILO!</h1>
-      <h2>-Generos-</h2>
-      <img src="assets/image/ritmos.jpg"/>
-      <div>Nueva music prende corazones..
-        Estas nuevas canciones explotaran tus emociones.
-      </div>
-      <p>Exitos del 2022!<ion-icon name="musical-notes-outline"></ion-icon></p>
-    </ion-slide>
-  
-  </ion-slides>
-</ion-content>
--->

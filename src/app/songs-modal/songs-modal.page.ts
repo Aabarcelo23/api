@@ -10,6 +10,7 @@ export class SongsModalPage implements OnInit {
 
   artist: string;
   songs: any;
+  album: string;
 
   constructor(private navParams: NavParams, private modalController: ModalController) { }
 
@@ -19,6 +20,7 @@ export class SongsModalPage implements OnInit {
   ionViewDidEnter(){
     this.artist = this.navParams.data.artist;
     this.songs = this.navParams.data.songs;
+    this.album = this.navParams.data.album;
   }
 
   closeModal(){

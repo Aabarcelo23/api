@@ -1,10 +1,26 @@
+ion-slides{
+  background-color: gray;
+  height:160px;
+}
+ion-title{
+  color:#B049D9;
+  background-color:black;
+}
+
+
 ion-avatar {
   height: 150px;
   width: 90%;
+  
 }
 
+ion-menu-button{
+  color:#B049D9;
+  background-color:black;
+}
 ion-avatar span {
   font-size: 15px;
+  margin-top:4px;
 }
 
 ion-avatar img {
@@ -12,77 +28,23 @@ ion-avatar img {
   height: 90px;
 }
 
+ion-col{
+  background-color:black;
+}
+ion-text{
+  color:#49F7E2;
+}
+ion-icon{
+  color:#B049D9;
+}
+
+h1{
+  padding-left:10px;
+  color:pink;
+  background-color:black;
+
+}
+
 .square-avatar {
   --border-radius: 0;
 }
-/*
-ion-slides{
-  height:100%;
-  background-color: var(--ion-color-warning-contrast);// variable creada de css
-  max-width: 800px;
-}
-
-.swiper-slide{
-  display:block;
-  margin-bottom:60px;
-  background-color: var(--ion-color-secondary);// variable creada de css
-  border-radius: var(--slide-img-border-radius); //variable creada por mi
-}
-
-ion-slide >h1{
-  margin:40px;
-  color:purple;
-  font-family: bold;
- 
-}
-
-
-ion-slide >h2{
-  margin:30px;
-  color:#D610B5;
-  font-style: italic;
-}
-
-ion-slide > img{
-  height: var(--slide-height); //variable creada por mi
-  width: var(--slide-width);   //variable creada por mi
-  border-radius: 20px ;
-  border-style: black 3px;
-  background-color: black;
-  padding: 10px;
-}
-
-
-ion-slide > p{
-  font-style: italic;
-  font-size:22px;
-  padding: 5px;
-  color:white;
-  border-style: #D610B5;
-}
-
-ion-slide > p> ion-icon{
-  color:#D610B5;
-  font-size: 20px;
-} 
-
-ion-slide > ion-icon[name="close"]{
-  float: right;
-  color:purple;
-  font-size: 30px;
-  padding:7px;
-}
-
-ion-button{
-  --background:red;
-  font-size:15px;
-  --color:black;
-}
-
-ion-slide > div{
-  font-size:22px;
-  padding: 5px;
-  color:black;
-}
-
-*/
